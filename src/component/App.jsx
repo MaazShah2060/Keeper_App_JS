@@ -1,14 +1,10 @@
 import React from 'react';
-import Header from './Header';
-import Note from './Note'
-import Footer from './Footer';
 
-function App(){
-    return <div>
-    <header><Header/></header>
-    <body><Note/></body>
-    <footer><Footer/></footer>
-    </div>
+function App(props){
+return <div className='note'>
+        <h1>{props.title}</h1>
+        <p>{props.content}</p>
+        </div>
 }
 
 export default App;
