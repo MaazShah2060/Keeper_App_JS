@@ -6,7 +6,7 @@ import Header from "./component/Header"
 import Footer from "./component/Footer"
 function show(Note){
     return <App 
-        id={Note.id}
+        key={Note.id}
         title={Note.title}
         content={Note.content}
     />
